@@ -29,7 +29,7 @@ deploy:
         - heroku-deploy
         - script:
             name: Update database
-            code: heroku run rake db:migrate --app $APP_NAME
+
       after-steps:
               - hipchat-notify:
                   token: $HIPCHAT_TOKEN
